@@ -1,0 +1,31 @@
+.nav{
+
+}
+.nav-list{
+    display: flex;
+    width: 760px;
+    max-width: 100%;
+    margin: 0 auto;
+    justify-content: space-between;
+    list-style: none;
+    border-bottom: 1px solid #ccc;
+    padding: 0 50px;
+}
+.nav-item{
+    cursor: pointer;
+    padding-bottom: 10px;
+    width: 100px;
+    text-align: center;
+}
+.nav-item.active{
+    position: relative;
+}
+.nav-item.active::before{
+    position: absolute;
+    content: "";
+    width: 100px;
+    background-color: #007cff;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+}
